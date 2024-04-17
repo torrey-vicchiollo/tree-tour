@@ -2,18 +2,26 @@
   
 <head>
     
-    <script src="carouselController.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            loadImagesIntoCarousel("mainPageCarousel");
-        });
-    </script>
+    <script src="carouselController.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
   
 <body>
     <div class="header"></div>
-    <div class="Carousel" id="mainPageCarousel">
-
+    <div class="carousel" data-carousel="">
+        <button class="carousel-button previous" data-carousel-button="prev">&#xab;</button>
+        <button class="carousel-button next" data-carousel-button = "next">&#xbb;</button>
+        <ul data-slides>
+            <li class="slide" data-active>
+                <img src="image1.jpg" alt="tree1">
+            </li>
+            <li class="slide">
+                <img src="image2.jpg" alt="tree2">
+            </li>
+            <li class="slide">
+                <img src="image3.jpg" alt="tree3">
+            </li>
+        </ul>
     </div>
 
     <div class="footer"></div>
