@@ -4,13 +4,19 @@
 
 body {
     margin: 0;
+    font-family: Arial, sans-serif; /* Example font family */
+    background-color: #f2f2f2; /* Light gray background */
 }
 
-.carousel{
+.carousel {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 130px); /* Adjusted height to accommodate the header */
     position: relative;
+    margin-top: 130px; /* Margin to ensure space below the header */
+    margin-bottom: 130px;
+    z-index: 0; /* Ensure the carousel is behind the header */
 }
+
 .carousel > ul {
     margin: 0;
     padding: 0;
@@ -44,7 +50,7 @@ slide > img {
     font-size: 4rem;
     top: 50%;
     transform: translateY(-50%);
-    color: rgba(225, 225, 225, .5);
+    color: rgba(225, 225, 225, .9);
     cursor: pointer;
     border-radius: .25rem;
     padding: 0 .5rem;
@@ -71,3 +77,45 @@ slide > img {
     right: 1rem;
 }
 
+.header {
+    background-color: #4e2a84; /* Winona State University purple */
+    color: white; /* Example text color */
+    padding: 20px; /* Example padding */
+    text-align: center; /* Center align text */
+    font-size: 24px; /* Example font size */
+    font-weight: bold; /* Example font weight */
+    position: absolute; /* Position the header absolutely */
+    top: 0; /* Align the header to the top of its container */
+    left: 0; /* Align the header to the left of its container */
+    width: 100%; /* Ensure the header spans the full width of its container */
+    height: 130px; /* Adjusted height to match the image height */
+    z-index: 1; /* Ensure the header is above other content */
+}
+
+.header img {
+    max-width: 100px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+.footer {
+    background-color: #4e2a84; /* Winona State University purple */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
