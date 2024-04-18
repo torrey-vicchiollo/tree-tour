@@ -15,29 +15,31 @@
 </head>
   
 <body>
-    <!-- header for use and implementation -->
-    <div class="header">
-        <img src="warriors.png" alt="logo">
-    </div>
-    <div id="starterCarousel" class="carousel" data-carousel="">
-        <button class="carousel-button previous" data-carousel-button="prev">&#xab;</button>
-        <button class="carousel-button next" data-carousel-button = "next">&#xbb;</button>
-        <ul data-slides>
-            <li class="slide" data-active>
-                <img class="carousel" src="image1.jpg" alt="tree1">
-            </li>
-            <li class="slide">
-                <img class="carousel" src="image2.jpg" alt="tree2">
-            </li>
-            <li class="slide">
-                <img class="carousel" src="image3.jpg" alt="tree3">
-            </li>
-        </ul>
-    </div>
-
-    <!-- footer for use and implementation -->
-    <div class="footer">
-        <img src="warriors.png" alt="logo">
+    <div id="wrapper">
+        <div id="header">
+            <img src="warriors.png" alt="logo">
+        </div>
+        <h1>Our Tours</h1>
+        <div id="starterCarousel" class="carousel" data-carousel="">
+            <button id="prev" class="carousel-button" data-carousel-button="prev">&#xab;</button>
+            <button id="next" class="carousel-button" data-carousel-button = "next">&#xbb;</button>
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img class="carouselImg" src="image1.jpg" alt="tree1">
+                </li>
+                <li class="slide">
+                    <img class="carouselImg" src="image2.jpg" alt="tree2">
+                </li>
+                <li class="slide">
+                    <img class="carouselImg" src="image3.jpg" alt="tree3">
+                </li>
+            </ul>
+        </div>
+        <!-- footer for use and implementation
+        <div class="footer">
+            <img src="warriors.png" alt="logo">
+        </div>
+        -->
     </div>
 </body>
   

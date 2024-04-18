@@ -5,11 +5,55 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif; /* Example font family */
-    background-color: #f2f2f2; /* Light gray background */
+* {
+    font-family: Arial, sans-serif;
 }
+
+body {
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 100%;
+}
+
+#wrapper {
+    display: block;
+    margin: auto;
+}
+
+#header {
+    background-color: #4e2a84;
+    position: fixed;
+    width: 100%;
+    height: 130px;
+}
+
+#header img {
+    max-width: 100px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+h1 {
+    padding-top: 195px; 
+    padding-bottom: 65px;
+    font-size: 113px;
+    text-align: center;
+    margin: auto;
+    font-family: Garamond, serif;
+    font-style: italic;
+    font-weight: 100;
+}
+
+#starterCarousel {
+    width: 100%;
+    height: 260px;
+    margin: auto;
+    display: inline;
+}
+
+
 
 .carousel {
     width: 100vw;
@@ -45,9 +89,14 @@ slide > img {
     object-position: center;
 
 }
+#prev {
+    float: left;
+}
 
+#next { 
+    float: right;
+}
 .carousel-button{
-    position: absolute;
     z-index: 2;
     background: none;
     font-size: 4rem;
@@ -80,28 +129,6 @@ slide > img {
     right: 1rem;
 }
 
-.header {
-    background-color: #4e2a84; /* Winona State University purple */
-    color: white; /* Example text color */
-    padding: 20px; /* Example padding */
-    text-align: center; /* Center align text */
-    font-size: 24px; /* Example font size */
-    font-weight: bold; /* Example font weight */
-    position: fixed; /* Position the header absolutely */
-    top: 0; /* Align the header to the top of its container */
-    left: 0; /* Align the header to the left of its container */
-    width: 100%; /* Ensure the header spans the full width of its container */
-    height: 130px; /* Adjusted height to match the image height */
-    z-index: 1; /* Ensure the header is above other content */
-}
-
-.header img {
-    max-width: 100px;
-    height: auto;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
 
 
 .footer {
@@ -123,7 +150,11 @@ slide > img {
     margin: 0 auto;
 }
 
-.carousel {
-    width: 200px;
-    height: 200px;
+.carouselImg {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px;
+    margin:auto;
+    margin-left: 100px;
 }
