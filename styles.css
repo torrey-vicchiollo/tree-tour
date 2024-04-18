@@ -87,7 +87,7 @@ slide > img {
     text-align: center; /* Center align text */
     font-size: 24px; /* Example font size */
     font-weight: bold; /* Example font weight */
-    position: absolute; /* Position the header absolutely */
+    position: fixed; /* Position the header absolutely */
     top: 0; /* Align the header to the top of its container */
     left: 0; /* Align the header to the left of its container */
     width: 100%; /* Ensure the header spans the full width of its container */
@@ -117,8 +117,13 @@ slide > img {
 }
 
 .footer img {
-    max-width: 150px;
+    max-width: 100px;
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+.carousel {
+    width: 200px;
+    height: 200px;
 }
