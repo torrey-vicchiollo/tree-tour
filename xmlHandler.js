@@ -90,13 +90,15 @@ function fillTourCarousel(xml) {
             let descriptionText = description.innerHTML.trim();
             let themeIdText = themeId.innerHTML.trim();
 
-            let a = document.createElement('a');
-            a.href = "https://www2.winona.edu/m/arboretum/directory.asp?t=" + themeIdText;
-            a.textContent = themeNameText + " " + descriptionText;
+            let p = document.createElement('p');
+            p.className = "https://www2.winona.edu/m/arboretum/directory.asp?t=" + themeIdText;
+            p.textContent = themeNameText + " " + descriptionText + "\n";
+
+
 
             let li = document.createElement('li');
             li.classList.add('slide');
-            li.appendChild(a);
+            li.appendChild(p);
 
             slides.appendChild(li);
 
@@ -105,4 +107,5 @@ function fillTourCarousel(xml) {
             }
         }
     }
+
 }
