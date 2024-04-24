@@ -160,3 +160,49 @@ slide > img {
     margin-left: 100px;
 }
 
+#header {
+    background-color: #4e2a84;
+    position: fixed;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    z-index: 1000; /* Ensure the header is above other elements */
+}
+
+#header img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#header-content {
+    margin-left: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allow the header content to occupy remaining space */
+}
+
+
+#header-content a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px; /* Adjusted padding */
+    border: 2px solid white;
+    border-radius: 7%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#header-content a:first-child {
+    margin-left: 20%; /* Adjusted margin for the first link */
+}
+
+#header-content a:not(:first-child) {
+    margin-left: 2%; /* Adjusted margin for the rest of the links */
+}
+
+#header-content a:hover {
+    background-color: white;
+    color: #4e2a84;
+}

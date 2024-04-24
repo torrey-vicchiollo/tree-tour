@@ -1,7 +1,7 @@
 <html lang="en">
-  
+
 <head>
-    
+
     <script src="carouselController.js" defer></script>
     <script src="xmlHandler.js" defer></script>
     <link rel="stylesheet" href="styles.css">
@@ -9,31 +9,43 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             loadXMLDocForCarousel();
-            
+
         });
     </script>
 </head>
-  
+
 <body>
     <div id="wrapper">
         <div id="header">
-            <img src="warriors.png" alt="logo">
+            <a href="https://www.winona.edu/">
+                <img src="warriors.png" alt="logo">
+            </a>
+            <div id="header-content">
+                <a href="index.html">Home</a>
+                <a href="https://www.winona.edu/admissions/discover/winona/">Winona Campus</a>
+                <a href="https://www.winona.edu/admissions/discover/rochester/">Rochester Campus</a>
+                <a href="https://www.winona.edu/request-info/">Request Info</a>
+                <a href="https://www.winona.edu/admissions/visit/">Visit</a>
+                <a href="https://www.winona.edu/admissions/apply/">Apply</a>
+            </div>
         </div>
         <h1>Here you can see some of our ambassador trees</h1>
         <div id="starterCarousel" class="carousel" data-carousel="">
             <button id="prev" class="carousel-button" data-carousel-button="prev">&#xab;</button>
-            <button id="next" class="carousel-button" data-carousel-button = "next">&#xbb;</button>
+            <button id="next" class="carousel-button" data-carousel-button="next">&#xbb;</button>
             <ul data-slides>
             </ul>
         </div>
-        <a href="toursPage.html">Click here to see our tours!</a>
-        <!-- footer for use and implementation
+        <a href="toursPage.html">
+            <button>Click here to see our tours!</button>
+        </a>
+        <!-- footer for use and implementation -->
         <div class="footer">
             <img src="warriors.png" alt="logo">
         </div>
-        -->
+
     </div>
-    
+
 </body>
-  
+
 </html>
