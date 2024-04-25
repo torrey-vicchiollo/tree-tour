@@ -42,7 +42,6 @@ h1 {
     font-size: 100px;
     text-align: center;
     margin: auto;
-    font-family: Garamond, serif;
     font-style: italic;
     font-weight: 100;
 }
@@ -232,13 +231,33 @@ slide > img {
     box-shadow: rgba(0, 0, 0, 0.35) 20px 20px 20px;
 }
 
-#seeTour, #seeMap {
+#seeTour, #seeMap{
     padding: 50px;
     color: white;
     background-color: #4e2a84;
     font-size: 50px;
     margin-top: 200px;
+    transform: translate(50%, 0%);
+    cursor: pointer;
 }
+
+#goBack{
+    padding: 50px;
+    color: white;
+    background-color: #4e2a84;
+    font-size: 50px;
+    margin-top: 200px;
+    cursor: pointer; 
+    transform: translate(20%, 0%);
+}
+
+
+
+#seeTour button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35);
+}
+
+
 
 #treeCarousel p {
     font-size: 50px;
@@ -247,4 +266,10 @@ slide > img {
 #lowerPicture {
     height: 600px;
     width: 750px;
+    transform: translate(11%, 0%);
+}
+
+li{
+    text-align: center;
+    
 }
