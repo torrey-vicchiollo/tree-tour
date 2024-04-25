@@ -54,12 +54,15 @@ h1 {
     display: inline;
 }
 
+#treeCarousel {
+    margin-bottom: 130px;
+    height: 200px;
+}
 
 .carousel {
     width: 100vw;
     height: calc(100vh - 130px); /* Adjusted height to accommodate the header */
     position: relative;
-    margin-top: 130px; /* Margin to ensure space below the header */
     margin-bottom: 130px;
     z-index: 0; /* Ensure the carousel is behind the header */
 }
