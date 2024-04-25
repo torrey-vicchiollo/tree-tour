@@ -230,3 +230,19 @@ slide > img {
 #tours-link button:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 20px 20px 20px;
 }
+
+#seeTour, #seeMap {
+    padding: 50px;
+    color: white;
+    background-color: #4e2a84;
+    font-size: 50px;
+    margin-top: 200px;
+}
+
+#seeTour:hover, #seeMap:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 20px 20px 20px;
+}
+
+#treeCarousel p {
+    font-size: 50px;
+}
