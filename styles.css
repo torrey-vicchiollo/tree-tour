@@ -243,3 +243,8 @@ slide > img {
 #treeCarousel p {
     font-size: 50px;
 }
+
+#lowerPicture {
+    height: 600px;
+    width: 750px;
+}
