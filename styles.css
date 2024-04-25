@@ -37,9 +37,9 @@ body {
 }
 
 h1 {
-    padding-top: 195px; 
-    padding-bottom: 65px;
-    font-size: 113px;
+    padding-top: 150px; 
+    padding-bottom: 50px;
+    font-size: 100px;
     text-align: center;
     margin: auto;
     font-family: Garamond, serif;
@@ -53,7 +53,6 @@ h1 {
     margin: auto;
     display: inline;
 }
-
 
 
 .carousel {
@@ -88,7 +87,19 @@ slide > img {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius:50%;
+}
 
+#ds img {
+    border-radius: 50%;
+    height: 800px;
+    width: 800px;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 0px 0px;
+    
+}
+
+#ds{
+    font-size: 100px;
 }
 
 #prev {
@@ -152,14 +163,6 @@ slide > img {
     margin: 0 auto;
 }
 
-.carouselImg {
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px;
-    margin:auto;
-    margin-left: 100px;
-}
 
 #header {
     background-color: #4e2a84;
@@ -211,5 +214,16 @@ slide > img {
 #tours-link {
     display: block;
     text-align: center;
-    margin-top: 20px;
+}
+
+#tours-link button {
+    padding: 50px;
+    color: white;
+    background-color: #4e2a84;
+    font-size: 50px;
+    margin-top: 200px;
+}
+
+#tours-link button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 20px 20px 20px;
 }
